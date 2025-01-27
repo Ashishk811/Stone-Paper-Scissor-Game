@@ -47,7 +47,7 @@ function final_result(yourChoice,compChoice){
   }
   if (yourChoice== 'paper'){
     if (compChoice==='paper'){
-      result='Round tie';
+      result='Round Tie';
       document.querySelector('#score').value=result;}
     else if(compChoice==='scissor'){
       final_score.comp++;      
