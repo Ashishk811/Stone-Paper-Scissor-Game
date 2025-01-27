@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Game</title>
+</head>
+<body>
+
+<div id="game">
+  <h1><p>Stone</p>
+    <p>Paper</p>
+    <p>Scissor</p>
+    <p id="ys">You</p>
+    <p id="cs">Computer</p>
+    <input id="cs-num" class="display-cs" type="text" readonly>
+    <input id="you-num" class="display-you" type="text" readonly>
+    <input id="score" type="text" readonly>
+    <div id="end" type="text" >
+          <input id="end_show" type="text" readonly>
+          <button id="end_again" onclick="
+          again();
+          "></button>
+    </div>
+  </h1>
+  
+  <div id="buttons">
+
+    <!-- Stone -->
+    <button id="b1" class="button" onclick="
+      randomgen();
+      final_result('stone',compChoice);
+      saveResult();
+      end();
+      "></button>
+
+    <!-- Paper -->
+    <button id="b2" class="button" onclick="
+      randomgen();
+      final_result('paper',compChoice);
+      saveResult();
+      end();
+    "></button>
+
+    <!-- scissor -->
+    <button id="b3" class="button" onclick="
+      randomgen();
+      final_result('scissor',compChoice);
+      saveResult();
+      end();
+    "></button>
+
+  </div>
+  <br>
+  <button id="reset" onclick=" 
+  localStorage.clear();
+  reset_Score();
+  resetdisplay();
+  document.querySelector('#score').value= nun;
+  ">START AGAIN</button>
+</div> 
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,#0a0a0a,#3a4452);
+}
+h1{
+  color:aliceblue;
+  border: 2px solid white;
+  width: 500px;
+  height: 112px;
+  border-radius: 7px;
+  box-shadow: 5px 0px 30px 3px #e100ff87, -5px 0px 30px 3px #008cff85;
+  
+}
+
+
+
+
+h1 p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 15px;
+  cursor: default;
+}
+
+#buttons{
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+button{
+  display: flex;
+} #b1{
+  background-image: url(stone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 87%;
+  cursor: pointer;
+}
+#b2{
+  background-image: url(paper.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85% 80%;
+  cursor: pointer;
+}
+#b3{
+  background-image: url(scc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65% 90%;
+  cursor: pointer;
+}#ys{
+  position: relative;
+  left: 375px;
+  bottom: 100px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 15px;
+  width: 95px;
+  height: 90px;
+  border-radius: 7px;
+  background-color: aliceblue;
+  color: black;
+  cursor: default;
+}#cs{
+  position: relative;
+  left: 265px;
+  bottom: 190px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 15px;
+  width: 95px;
+  height: 90px;
+  border-radius: 7px;
+  background-color:aliceblue;
+  color: black;
+  cursor: default;
+}
+.button{
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin-top: 25px;
+  border: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+} #cs-num{
+  position: relative;
+  left: 303px;
+  bottom: 250px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  z-index: 1;
+  font-weight: 700;
+  cursor: default;
+}
+
+#you-num{
+  position: relative;
+  left: 355px;
+  bottom: 250px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 35px;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  z-index: 1;
+  cursor: default;
+}
+
+#score{
+  position: relative;
+  bottom: 430px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-bottom: 5px;
+  z-index: 1;
+  width: 500px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 30px;
+  font-weight: 550;
+  cursor: auto;
+}
+
+
+.button::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1000px;
+  z-index: -1;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  
+}
+
+.button:hover{
+  box-shadow: 10px 0px 100px #e100ffb3, -10px 0px 100px #008cffb7 ;
+  background-color: transparent;
+}
+
+#reset{
+  position: relative;
+  left: 30%;
+  top: 5px;
+  height: 30px;
+  width: 200px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 3px;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 550;
+  border:white solid 2px;
+  border-radius: 5px;
+}
+#reset:hover{
+  color: #0a0a0a;
+  background-color: white;
+}
+
+#end{
+  position: relative;
+  left: 5%;
+  bottom: 442%;
+  height: 450px;
+  width: 450px;
+  z-index: 2;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(27, 33, 35, 0.59);
+  visibility: hidden;
+}
+
+#end_show{
+  position: relative;
+  left: 75px;
+  top: 25%;
+  height: 60px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  cursor: default;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 3px;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#end_again{
+  position: relative;
+  left: 195px;
+  top: 30%;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-image: url(again.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+h1{
+  width: 350px;
+  margin-left: 0px;
+}#cs{left: 150px;
+  margin-top: 0px;
+  font-size: 12px;
+  width: 80px;
+}#ys{left: 240px;
+  margin-top: 4px;
+  font-size: 12px;
+  width: 80px;
+}
+#buttons{
+  width: 350px;
+}
+.button{
+  height: 85px;
+  width: 85px;
+}
+#score{
+  width: 350px;
+}
+#cs-num{
+  left: 180px;
+}#you-num{
+  left: 212px;
+}
+#reset{
+  left: 74px;
+}
+}
+
