@@ -80,11 +80,13 @@ function saveResult(){
   localStorage.setItem('Score_Save',JSON.stringify(final_score));
 }
 
-resetdisplay();
+
 function resetdisplay(){
 document.querySelector('.display-cs').value=0;
 document.querySelector('.display-you').value=0;
 }
+document.querySelector('.display-cs').value=final_score.comp;
+document.querySelector('.display-you').value=final_score.you;
 // function cs_won(){
 //   currentDisplay_cs += 1;
 //   document.querySelector('.display-cs').value=currentDisplay_cs;
